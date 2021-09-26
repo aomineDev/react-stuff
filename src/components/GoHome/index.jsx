@@ -7,6 +7,7 @@ const GoHome = ({ top, left, right, bottom }) => {
       <Link href='/'>
         <IconWrapper>
           <Icon className='fas fa-angle-left' />
+          <span>Go Home</span>
         </IconWrapper>
       </Link>
     </Wrapper>

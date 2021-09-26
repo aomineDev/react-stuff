@@ -31,7 +31,6 @@ export const GlobalReset = createGlobalStyle`
 
   // Set core body defaults
   body {
-    min-height: 100vh;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;

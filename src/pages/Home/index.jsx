@@ -1,22 +1,28 @@
-import { Link } from 'wouter'
+import { Title } from 'react-head'
 
-import { WrapperLogo, Logo } from './styles'
+import ItemList from '@/components/ItemList'
+
+import { Wrapper, Container, StyledTitle, WrapperLogo, Logo } from './styles'
 
 import logo from '@/assets/logo.svg'
 
-const Home = () => {
-  const data = [
-    { name: 'Password Validator', path: '/password-validator' }
-  ]
-  return (
-    <div>
-      <h1>React Stuffs</h1>
-      <WrapperLogo>
-        <Logo src={logo} alt='react logo' />
-      </WrapperLogo>
+import { stuff } from './stuff.json'
 
-      {data.map(({ name, path }, i) => <Link key={i} href={path}>{name}</Link>)}
-    </div>
+const Home = () => {
+  return (
+    <>
+      <Title>React Stuff</Title>
+
+      <Wrapper>
+        <Container>
+          <StyledTitle>React - Stuff</StyledTitle>
+          <WrapperLogo>
+            <Logo src={logo} alt='react logo' />
+          </WrapperLogo>
+          <ItemList stuff={stuff} />
+        </Container>
+      </Wrapper>
+    </>
   )
 }
 

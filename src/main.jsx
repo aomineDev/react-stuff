@@ -1,5 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import { HeadProvider } from 'react-head'
 
 import App from '@/App'
 import { GlobalReset } from '@/assets/styles/reset'
@@ -8,10 +9,12 @@ import { GlobalStyles } from '@/assets/styles'
 
 ReactDOM.render(
   <React.StrictMode>
-    <GlobalReset />
-    <GlobalFonts />
-    <GlobalStyles />
-    <App />
+    <HeadProvider>
+      <GlobalReset />
+      <GlobalFonts />
+      <GlobalStyles />
+      <App />
+    </HeadProvider>
   </React.StrictMode>,
   document.getElementById('root')
 )

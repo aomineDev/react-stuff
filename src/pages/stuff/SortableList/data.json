@@ -1,0 +1,32 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "title": "aomine Daiki",
+      "subtitle": "as of generation of miracles",
+      "avatarUrl": "https://images.unsplash.com/photo-1608611821879-e6a989ed75c4?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDc3fGJvOGpRS1RhRTBZfHxlbnwwfHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=50&q=60",
+      "likes": 568
+    },
+    {
+      "id": 2,
+      "title": "Akashi Seijuro",
+      "subtitle": "eye of emperor, capitan of the generation of miracles",
+      "avatarUrl": "https://images.unsplash.com/photo-1632355244320-02b377f2db19?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDI4fGJvOGpRS1RhRTBZfHxlbnwwfHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=50&q=60",
+      "likes": 412
+    },
+    {
+      "id": 3,
+      "title": "Ryota Kise",
+      "subtitle": " He is known for his copying abilities",
+      "avatarUrl": "https://images.unsplash.com/photo-1580802173430-cc68226a0875?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDEwfGJvOGpRS1RhRTBZfHxlbnwwfHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=50&q=60",
+      "likes": 315
+    },
+    {
+      "id": 4,
+      "title": "Shintaro Midorima",
+      "subtitle": "vice-captain of the generation of miracles",
+      "avatarUrl": "https://images.unsplash.com/photo-1614113675082-37516c154f9a?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDEzfGJvOGpRS1RhRTBZfHxlbnwwfHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=50&q=60",
+      "likes": 425
+    }
+  ]
+}

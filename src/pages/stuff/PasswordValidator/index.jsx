@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Title } from 'react-head'
 
 import GoHome from '@/components/GoHome'
 import Fill from './Fill'
@@ -41,37 +42,41 @@ function App () {
   }
 
   return (
-    <Wrapper>
-      <GoHome top left />
-      <Form onSubmit={handleSubmit}>
-        <Message isComplete={isComplete}>
-          {
+    <>
+      <Title>React Stuff - Password Validator</Title>
+
+      <Wrapper>
+        <GoHome top left />
+        <Form onSubmit={handleSubmit}>
+          <Message isComplete={isComplete}>
+            {
           !isComplete
             ? ''
             : isValid
               ? 'Welcome!'
               : 'try Again!'
         }
-        </Message>
-        <Input
-          type='password'
-          placeholder='Password'
-          onChange={handleChange}
-          value={password}
-        />
-        <Button>
-          <Fill isComplete={isComplete} isValid={isValid} />
-          {isLoading || isComplete
-            ? (
-              <Spin>
-                <Icon><i className='fas fa-times' /></Icon>
-              </Spin>
-              )
-            : null}
-          {!isLoading && <Icon><i className='fas fa-arrow-right' /></Icon>}
-        </Button>
-      </Form>
-    </Wrapper>
+          </Message>
+          <Input
+            type='password'
+            placeholder='Password'
+            onChange={handleChange}
+            value={password}
+          />
+          <Button>
+            <Fill isComplete={isComplete} isValid={isValid} />
+            {isLoading || isComplete
+              ? (
+                <Spin>
+                  <Icon><i className='fas fa-times' /></Icon>
+                </Spin>
+                )
+              : null}
+            {!isLoading && <Icon><i className='fas fa-arrow-right' /></Icon>}
+          </Button>
+        </Form>
+      </Wrapper>
+    </>
   )
 }
 
