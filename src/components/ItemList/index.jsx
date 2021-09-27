@@ -5,7 +5,7 @@ import { Wrapper } from './styles'
 const ItemList = ({ stuff }) => {
   return (
     <Wrapper>
-      {stuff.map(({ name, path }, i) => <Item key={i} path={path} name={name} />)}
+      {stuff.map(({ id, name, path, imgUrl }) => <Item key={id} path={path} name={name} imgUrl={imgUrl} />)}
     </Wrapper>
   )
 }

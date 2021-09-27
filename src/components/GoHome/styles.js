@@ -26,14 +26,14 @@ export const IconWrapper = styled.a`
   box-shadow: 1px 1px 16px -4px ${rgba('#0099ff', 0.4)};
   transition: all 300ms;
 
-  &:hover {
+  :hover {
     width: 100%;
     border-radius: 8px;
     padding-left: 12px;
     padding-right: 16px;
   }
 
-  &:hover > i {
+  :hover > i {
     animation: ${shake} 1s ease-in-out infinite;
   }
 
@@ -51,7 +51,7 @@ export const IconWrapper = styled.a`
     transition: opacity 300ms;
   }
 
-  &:hover > span {
+  :hover > span {
     width: 100%;
     visibility: visible;
     opacity: 1;

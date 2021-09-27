@@ -2,20 +2,21 @@ import styled, { keyframes } from 'styled-components'
 
 export const Wrapper = styled.div`
   min-height: 100vh;
-  background-color: #282c34;
+  background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
+  font-family: 'Poppins', sans-serif;
 `
 
 export const Container = styled.div`
   width: 80%;
   max-width: 1440px;
-  min-width: 300px;
+  min-width: 280px;
   margin-right: auto;
   margin-left: auto;
 `
 
 export const StyledTitle = styled.h1`
-  padding-top: 20px;
-  margin-bottom: 20px;
+  padding-top: 30px;
+  margin-bottom: 30px;
   text-align: center;
   color: #ffffff;
   font-size: 36px;
@@ -32,7 +33,7 @@ export const WrapperLogo = styled.div`
   width: 100%;
   display: flex;
   justify-content: center;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 `
 
 const spin = keyframes`

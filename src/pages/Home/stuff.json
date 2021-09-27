@@ -1,12 +1,16 @@
 {
   "stuff": [
-    { 
+    {
+      "id": 1,
       "name": "Password Validator",
-       "path": "/password-validator" 
+       "path": "/password-validator" ,
+       "imgUrl": "https://i.imgur.com/UAB0CsY.jpg"
     },
-    { 
+    {
+      "id": 2,
       "name": "Sortable List",
-       "path": "/sortable-list" 
+       "path": "/sortable-list",
+       "imgUrl": "https://i.imgur.com/wE7OYEq.jpg"
     }
   ]
 }

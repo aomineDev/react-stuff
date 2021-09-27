@@ -6,4 +6,11 @@ export const GlobalStyles = createGlobalStyle`
       'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
       sans-serif;
   }
+
+  button,
+  a,
+  input {
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+  }
 `
