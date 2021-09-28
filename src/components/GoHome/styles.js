@@ -28,7 +28,7 @@ export const IconWrapper = styled.a`
 
   :hover {
     width: 100%;
-    border-radius: 8px;
+    border-radius: 100px;
     padding-left: 12px;
     padding-right: 16px;
   }

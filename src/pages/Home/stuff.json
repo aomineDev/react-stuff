@@ -11,6 +11,13 @@
       "name": "Sortable List",
        "path": "/sortable-list",
        "imgUrl": "https://i.imgur.com/wE7OYEq.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Floating Button",
+       "path": "/floating-button",
+       "imgUrl": "https://i.imgur.com/EvSXRLt.jpg"
+      
     }
   ]
 }

@@ -2,7 +2,7 @@ import { Title } from 'react-head'
 
 import ItemList from '@/components/ItemList'
 
-import { Wrapper, Container, StyledTitle, WrapperLogo, Logo } from './styles'
+import { Wrapper, Hero, Container, StyledTitle, WrapperLogo, Logo, WrapperItem } from './styles'
 
 import logo from '@/assets/logo.svg'
 
@@ -14,13 +14,17 @@ const Home = () => {
       <Title>React Stuff</Title>
 
       <Wrapper>
-        <Container>
+        <Hero>
           <StyledTitle>React - Stuff</StyledTitle>
           <WrapperLogo>
             <Logo src={logo} alt='react logo' />
           </WrapperLogo>
-          <ItemList stuff={stuff} />
-        </Container>
+        </Hero>
+        <WrapperItem>
+          <Container>
+            <ItemList stuff={stuff} />
+          </Container>
+        </WrapperItem>
       </Wrapper>
     </>
   )

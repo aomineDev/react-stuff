@@ -1,9 +1,23 @@
 import styled, { keyframes } from 'styled-components'
 
 export const Wrapper = styled.div`
-  min-height: 100vh;
-  background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
+  height: 100vh;
   font-family: 'Poppins', sans-serif;
+  overflow-y: scroll;
+
+  @media screen and (min-width: 720px) {
+    ::-webkit-scrollbar {
+      width: 10px;
+      height: 10px;
+    }
+    ::-webkit-scrollbar-track {
+      background-color: rgba(41, 41, 41, 1);
+    }
+    ::-webkit-scrollbar-thumb {
+      border-radius: 5px;
+      background-color: rgba(255, 255, 255, .5);
+    }
+  }
 `
 
 export const Container = styled.div`
@@ -14,26 +28,34 @@ export const Container = styled.div`
   margin-left: auto;
 `
 
+export const Hero = styled.section`
+  padding-bottom: 120px;
+  background: linear-gradient(315deg, #efd5ff 0%, #515ada 100%); 
+`
+
 export const StyledTitle = styled.h1`
-  padding-top: 30px;
-  margin-bottom: 30px;
+  padding-top: 10px;
+  margin-bottom: 20px;
+  color: #61DAFB;
   text-align: center;
-  color: #ffffff;
-  font-size: 36px;
-  font-weight: 600;
-  letter-spacing: 10px;
-  text-transform: uppercase;
+  font-size: 80px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  font-family: 'Caveat', sans-serif;
+  text-shadow: 1px 1px 0 #20829c,
+              2px 2px 0 #20829c,
+              3px 3px 0 #20829c,
+              4px 4px 0 #20829c;
 
   @media screen and (max-width: 600px) {
-  font-size: 20px;
+    font-size: 40px;
   }
 `
 
 export const WrapperLogo = styled.div`
-  width: 100%;
   display: flex;
   justify-content: center;
-  margin-bottom: 30px;
 `
 
 const spin = keyframes`
@@ -45,4 +67,18 @@ const spin = keyframes`
 export const Logo = styled.img`
   height: 40vmin;
   animation: ${spin} infinite 20s linear;
+  filter: drop-shadow(4px 4px 0 #20829c);
+`
+
+export const WrapperItem = styled.main`
+  border-top-left-radius: 64px;
+  border-top-right-radius: 64px;
+  margin-top: -80px;
+  background-color: #F3F1F5;
+  padding-top: 30px;
+
+  @media screen and (max-width: 720px) {
+    border-top-left-radius: 32px;
+    border-top-right-radius: 32px;
+  }
 `
