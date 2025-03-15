@@ -74,8 +74,8 @@ export const WrapperItem = styled.main`
   border-top-left-radius: 64px;
   border-top-right-radius: 64px;
   margin-top: -80px;
-  background-color: #F3F1F5;
   padding-top: 30px;
+  background-color: #F3F1F5;
 
   @media screen and (max-width: 720px) {
     border-top-left-radius: 32px;
